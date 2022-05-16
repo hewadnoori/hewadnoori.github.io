@@ -12,23 +12,28 @@
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"> <!-- navbar-dark and bg-primary are two classes that change the color of the nav, fixed-top sticks the nav bar to the top-->
-      <div class="container"><!--wrapped the nav bar in a container to center the nav links-->
-        <a class="navbar-brand order-1 mr-0" href="https://www.teamtreehouse.com" target="_blank">Presented by Treehouse</a><!--nav uses flexbox so order-1 is used to move the link to the right of the navigation links, mr-0 makes the right margin 0-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#speakers">Speakers</a>
-            <a class="nav-item nav-link" href="#schedule">Schedule</a>
+    <nav class="navbar navbar-dark bg-primary align-items-start"> <!-- navbar-dark and bg-primary are two classes that change the color of the nav, fixed-top sticks the nav bar to the top-->
+      <div class="container flex-column align-items-start"><!--wrapped the nav bar in a container to center the nav links-->
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarNavAltMarkup">
+            <img class=" img-fluid rounded-circle d-none d-sm-block" src="img/jay.png" alt="Hewad Noori">
+            <p class="lead text-white text-center font-weight-bold">Hewad Noori</p>
+              <div class="navbar-nav flex-column">
+                <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#speakers">Resume</a>
+                <a class="nav-item nav-link" href="#schedule">Portfolio</a>
+                <a class="nav-item nav-link" href="#schedule">Contacts</a>
+              </div>
+            </div>
           </div>
-        </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
       </div>
     </nav><!-- /navbar -->
-
+    
+    <div class="main-content">
     <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-info text-white"> <!--bg-info changes the color of the background, text-white changes the text color to white-->
       <div class="container text-sm-center pt-5"> <!--text-sm-center centers the text and pt-5 gives it a top padding of 3 rem-->
@@ -369,7 +374,7 @@
           </div>
         </div>
       </div>
-
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
