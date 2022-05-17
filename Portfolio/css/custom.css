@@ -1,0 +1,20 @@
+.navbar .navbar-brand {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+}
+
+.jumbotron {
+    background-image: url('../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg');
+    background-size: cover;
+}
+
+@media (min-width: 576px) {}
+
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {}
