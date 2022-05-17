@@ -1,3 +1,14 @@
+@import url(fontawesome-all.min.css);
+
+
+a:visited {
+    color: rgba(247, 0, 247, 0.99);
+}
+
+a:active {
+    color: rgb(0, 128, 247);
+}
+
 .navbar .navbar-brand {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1rem;
@@ -6,6 +17,10 @@
 .jumbotron {
     background-image: url('../img/jefferson-santos-9SoCnyQmkzI-unsplash.jpg');
     background-size: cover;
+}
+
+#contact {
+    grid-column-gap: 1px;
 }
 
 @media (min-width: 576px) {}
