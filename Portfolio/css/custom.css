@@ -19,6 +19,15 @@ a:active {
     background-size: cover;
 }
 
+.modal.show .modal-dialog {
+    justify-content: center;
+
+}
+
+.modal-content {
+    width: 70vw;
+}
+
 #contact {
     grid-column-gap: 1px;
 }
@@ -32,4 +41,18 @@ a:active {
 @media (min-width: 992px) {}
 
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .proj-img {
+        grid-area: img;
+    }
+
+    .proj-desc {
+        padding: 0px;
+        margin: 20px;
+    }
+
+    .proj-skills {
+        grid-area: skills;
+    }
+}
