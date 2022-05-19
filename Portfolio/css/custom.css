@@ -1,12 +1,20 @@
 @import url(fontawesome-all.min.css);
 
-
-a:visited {
-    color: rgba(247, 0, 247, 0.99);
+img:hover {
+    border: 2px solid rgba(127, 160, 161, 0.685);
 }
 
-a:active {
-    color: rgb(0, 128, 247);
+.btn-primary {
+    transition: padding .2s;
+}
+
+.btn-primary:visited {
+    background-color: rgba(247, 0, 247, 0.99);
+}
+
+.btn-primary:hover {
+    background-color: rgb(86, 0, 247);
+    padding: .9rem;
 }
 
 .navbar .navbar-brand {
@@ -49,10 +57,35 @@ a:active {
 
     .proj-desc {
         padding: 0px;
-        margin: 20px;
+        margin: 0px;
     }
 
     .proj-skills {
         grid-area: skills;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 10vw;
+        grid-template-rows: 200vh;
+        right: auto;
+        left: auto;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .bg-primary {
+        background-color: rgb(4, 35, 41) !important;
+    }
+
+    .main-content {
+        padding-left: 10vw;
+    }
+
+    .jumbotron {
+        padding-top: 20px;
+    }
+
+    .pos-f-t {
+        text-align: center;
     }
 }
