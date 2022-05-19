@@ -4,6 +4,29 @@ img:hover {
     border: 2px solid rgba(127, 160, 161, 0.685);
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: rgb(4, 35, 41);
+    height: 40px;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 10px;
+    color: white;
+}
+
+.nav-img {
+    display: none;
+}
+
+.bg-primary {
+    background-color: rgb(4, 35, 41) !important;
+}
+
 .btn-primary {
     transition: padding .2s;
 }
@@ -46,11 +69,7 @@ img:hover {
 @media (min-width: 768px) {}
 
 
-@media (min-width: 992px) {}
-
-
-@media (min-width: 1200px) {
-
+@media (min-width: 992px) {
     .proj-img {
         grid-area: img;
     }
@@ -73,8 +92,28 @@ img:hover {
         padding: 20px 0px 0px 0px;
     }
 
-    .bg-primary {
-        background-color: rgb(4, 35, 41) !important;
+    .nav-img {
+        display: block;
+        border: 3px solid rgb(100, 101, 107);
+        border-radius: 50%;
+    }
+
+    .nav-img img {
+        width: 7vw;
+        border-radius: 50%;
+    }
+
+    #navbarNavAltMarkup p {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .navbar .container {
+        height: 70vw;
+    }
+
+
+    .nav-link {
+        padding-bottom: 30px;
     }
 
     .main-content {
@@ -88,4 +127,17 @@ img:hover {
     .pos-f-t {
         text-align: center;
     }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 10vw;
+        height: 80px;
+        text-align: center;
+        left: 0;
+        z-index: 2000;
+    }
 }
+
+
+@media (min-width: 1200px) {}
