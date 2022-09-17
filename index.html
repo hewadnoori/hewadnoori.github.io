@@ -67,6 +67,7 @@
                 <p class="list-group-item list-group-item-action"><strong>HTML</strong>: Hypertext Markup Language</p>
                 <p class="list-group-item list-group-item-action"><strong>CSS</strong>: Cascading Style Sheets</p>
                 <p class="list-group-item list-group-item-action"><strong>JavaScript</strong></p>
+                <p class="list-group-item list-group-item-action"><strong>React.js</strong></p>
                 <p class="list-group-item list-group-item-action"><strong>SASS</strong>: CSS preprocessor</p>
                 <p class="list-group-item list-group-item-action"><strong>Git</strong>: Version control system</p>
                 <p class="list-group-item list-group-item-action"><strong>AJAX</strong>: Asynchronous JavaScript And XML</p>
@@ -77,6 +78,32 @@
           <!-- projects -->
           <h1 class="display-4 text-center my-5 text-muted" id="projects">Projects</h1> <!--made the headers larger through display-4 and centered them through text-center and gave a top and bottom margin of 3 rem with my-5-->
           <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <a href="https://shopcityadmindashboard.netlify.app/" target="_blank"><img class="card-img-top" src="img/React-dashboard.PNG" alt="React dashboard"></a>
+                
+                <div class="card-body d-flex flex-column align-items-center">
+                  <div>
+                    <a class="btn btn-primary" href="https://shopcityadmindashboard.netlify.app/" target="_blank" role="button">Live</a>
+                    <a class="btn btn-primary" href="https://github.com/hewadnoori/React-Dashboard" target="_blank" role="button">Github</a>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project0">
+                      Info
+                    </button>
+                  </div>
+
+                  <!-- <h4 class="card-title">Employee Directory</h4>
+                  <p class="card-text">I used the Random User Generator API <a href="https://randomuser.me/" target="_blank">(https://randomuser.me/)</a> to grab information for 12 random “employees,” and used that data to build a prototype for an Awesome Startup employee directory. I requested a JSON object from an API using fetch and parsed the data so that 12 employees are listed in a grid with their information. Clicking the employee’s image or name will open a modal window with more detailed information.</p>
+                
+                  <div class="list-group">
+                    <p class="list-group-item list-group-item-action"><strong>HTML</strong>: Hypertext Markup Language</p>
+                    <p class="list-group-item list-group-item-action"><strong>CSS</strong>: Cascading Style Sheets</p>
+                    <p class="list-group-item list-group-item-action"><strong>JavaScript</strong></p>
+                    <p class="list-group-item list-group-item-action"><strong>AJAX</strong>: Asynchronous JavaScript And XML</p>
+                  </div> -->
+                </div>
+              </div>
+            </div>
             <div class="col-md-6 col-lg-4">
               <div class="card mb-3">
                 <a href="https://raw.githack.com/hewadnoori/techdegree-project-8/main/index.html" target="_blank"><img class="card-img-top" src="img/Employee-Directory.PNG" alt="Employee Directory"></a>
@@ -206,7 +233,7 @@
               </div>
             </div>
           
-            <div class="col-md-6 col-lg-4">
+            <!-- <div class="col-md-6 col-lg-4">
               <div class="card">
                 <a href="https://rawcdn.githack.com/hewadnoori/techdegree-project-3/22559a728f5fc5af813c93411081d1bd6b3d51b7/index.html" target="_blank"><img class="card-img-top" src="img/Online-registration-form.PNG" alt="Online Registration Form"></a>
 
@@ -214,24 +241,24 @@
                   <div>
                     <a class="btn btn-primary" href="https://rawcdn.githack.com/hewadnoori/techdegree-project-3/22559a728f5fc5af813c93411081d1bd6b3d51b7/index.html" target="_blank" role="button">Live</a>
                     <a class="btn btn-primary" href="https://github.com/hewadnoori/techdegree-project-3" target="_blank" role="button">Github</a>
-                    <!-- Button trigger modal -->
+                    Button trigger modal
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project6">
                       Info
                     </button>
                   </div>
-                  <!-- <h4 class="card-title">Online Registration Form</h4>
+                  <h4 class="card-title">Online Registration Form</h4>
                   <p class="card-text">Built a responsive, mobile-friendly registration form using a wide variety of HTML form input types and attributes. Built a mobile and desktop version of the form using media queries, and a "mobile-first" approach.</p>
                   
                   <h3 class="mb-4">Skills</h3>
                   <div class="list-group">
                     <p class="list-group-item list-group-item-action"><strong>HTML</strong>: Hypertext Markup Language</p>
                     <p class="list-group-item list-group-item-action"><strong>CSS</strong>: Cascading Style Sheets</p>
-                  </div> -->
+                  </div>
                   
                 </div>
               </div>
             </div>
-          </div><!-- projects -->
+          </div> projects -->
 
           <!-- contact -->
           <div class="card my-4 text-center">
@@ -268,6 +295,45 @@
 
 
     <!-- Modal -->
+    <div class="modal fade" id="project0" tabindex="-1" role="dialog" aria-labelledby="project0" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project0Title">React Admin Dashboard</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body row">
+            <div class="card col-12 proj-img px-0">
+              <img src="img/React-dashboard.PNG" alt="">
+            </div>
+            <div class="card p-4 col-lg-6 proj-desc">
+              <h4 class="card-title">Description</h4>
+              <p class="card-text">&ensp; This dashboard was built with React.js and styled with Tailwind.css. The charts, graphs, orders page and many more pieces of the website were built with Syncfusion. It has multiple features that every website needs and wants like a color theme option.</p>
+            </div>
+            <div class="card col-12 col-lg-6 proj-skills justify-content-center align-content-center">
+              <div class="list-group  ">
+                <h4 class="card-title">Skills</h4>
+                <p class="list-group-item list-group-item-action"><strong>React.js</strong></p>
+                <p class="list-group-item list-group-item-action"><strong>JavaScript</strong></p>
+                <p class="list-group-item list-group-item-action"><strong>Tailwind.css</strong></p>
+                <p class="list-group-item list-group-item-action"><strong>Syncfusion</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
     <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
